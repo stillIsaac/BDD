@@ -1,0 +1,11 @@
+--Quinta consulta
+SELECT I.name FROM instructor I WHERE I.salary BETWEEN 100000 AND 115000;
+--Sexta consulta
+SELECT DISTINCT S.name
+FROM takes T join student S on t.id = s.id
+WHERE T.grade = 'A+';
+--Séptima consulta
+SELECT C.title 
+FROM section S JOIN course C on S.course_id = C.course_id
+WHERE S.building = 'Power'
+AND S.room_number = '717';
