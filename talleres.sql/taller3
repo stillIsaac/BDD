@@ -9,3 +9,5 @@ SELECT C.title
 FROM section S JOIN course C on S.course_id = C.course_id
 WHERE S.building = 'Power'
 AND S.room_number = '717';
+
+--comento
